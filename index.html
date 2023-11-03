@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.svg" alt="" />
+    </header>
+    <main>
+      <div class="page">
+        <form class="page__input">
+          <h2 class="page__h3 page__h3--gray">Bill</h2>
+          <input
+            type="number"
+            name="bill"
+            id="bill"
+            step="0.01"
+            placeholder="0"
+          />
+          <h3 class="page__h3 page__h3--gray">Select Tip %</h3>
+          <div class="page__tips">
+            <label for="5" class="page__tip_ammount">
+              <input
+                type="radio"
+                name="tip"
+                id="5"
+                class="tip visually-hidden"
+              />
+              <span>5%</span>
+            </label>
+            <label for="10" class="page__tip_ammount">
+              <input
+                type="radio"
+                name="tip"
+                id="10"
+                class="tip visually-hidden"
+              />
+              <span>10%</span>
+            </label>
+            <label for="15" class="page__tip_ammount">
+              <input
+                type="radio"
+                name="tip"
+                id="15"
+                class="tip visually-hidden"
+              />
+              <span>15%</span>
+            </label>
+            <label for="25" class="page__tip_ammount">
+              <input
+                type="radio"
+                name="tip"
+                id="25"
+                class="tip visually-hidden"
+              />
+              <span>25%</span>
+            </label>
+            <label for="50" class="page__tip_ammount">
+              <input
+                type="radio"
+                name="tip"
+                id="50"
+                class="tip visually-hidden"
+              />
+              <span>50%</span>
+            </label>
+            <label
+              for="custom"
+              class="page__tip_ammount page__tip_ammount--custom"
+            >
+              <input
+                type="radio"
+                name="tip"
+                id="custom"
+                class="tip visually-hidden"
+              />
+              <input
+                type="number"
+                name="custom-tip"
+                id="custom-tip"
+                class="tip__input"
+                placeholder="Custom"
+              />
+            </label>
+          </div>
+          <h3 class="page__h3 page__h3--gray" id="page__title--people">
+            <span>Number of People</span>
+            <span class="page__people--error"></span>
+          </h3>
+          <input type="number" name="people" id="people" placeholder="0" />
+          <button type="submit" class="visually-hidden"></button>
+        </form>
+        <div class="page__result">
+          <h3 class="page__h3 page__h3--white page__result--after">
+            Tip Amount
+          </h3>
+          <p class="page__result_info">
+            <img src="images/icon-dollar.svg" alt="united states dollar" />
+            <span class="page__amount page__amount--tip">0.00</span>
+          </p>
+          <h3 class="page__h3 page__h3--white page__result--after">Total</h3>
+          <p class="page__result_info">
+            <img src="images/icon-dollar.svg" alt="united states dollar" />
+            <span class="page__amount page__amount--total">0.00</span>
+          </p>
+          <button class="page__button page__button--reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
