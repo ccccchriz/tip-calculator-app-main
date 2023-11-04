@@ -111,16 +111,17 @@ body {
   background-color: hsl(var(--clr-neutral-300));
   font-family: var(--ff-base);
   font-weight: var(--fw-base);
+  height: 100vh;
 }
 
 header {
-  height: 15vh;
+  min-height: 15%;
   display: grid;
   place-content: center;
 }
 
 main {
-  min-height: 85vh;
+  min-height: 85%;
   display: grid;
 }
 
@@ -286,8 +287,14 @@ main {
 }
 
 @media (min-width: 580px) {
+  header {
+    min-height: 30%;
+  }
+
   main {
-    place-items: center;
+    justify-content: center;
+    align-items: start;
+    min-height: 70%;
   }
 
   .page {
