@@ -312,14 +312,11 @@ main {
     grid-template-rows: 1fr 1fr;
   }
 
-  .page__tip_ammount {
-    min-width: 100px;
-  }
-
   .page__result {
     height: 100%;
     grid-template-rows: 1fr 1fr 3fr;
     width: 100%;
+    padding: 1.5rem;
   }
 
   .page__button--reset {
